@@ -1183,7 +1183,7 @@
                     </div>
                 </div>
 
-                <!-- Painel Colapsável 2: Faltas-Alunos -->
+                <!-- Painel Colapsável 2: Faltas-Alunos 
                 <div class="collapsible-wrapper">
                     <button class="collapsible-btn" id="faltas-alunos-btn" aria-expanded="false">
                         <span><i class="fa-regular fa-clipboard-user"></i> Faltas-Alunos — Registro de Frequência</span>
@@ -1228,136 +1228,143 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- Modal Lightbox (Visualização de Imagens Ampliadas da Galeria) -->
-    <div id="lightbox" class="lightbox-modal">
-        <span class="lightbox-close" id="lightbox-close">&times;</span>
-        <button class="lightbox-nav-btn prev" id="lightbox-prev" aria-label="Imagem Anterior"><i
-                class="fa-solid fa-chevron-left"></i></button>
-        <img class="lightbox-content" id="lightbox-img" src="" alt="Imagem ampliada">
-        <button class="lightbox-nav-btn next" id="lightbox-next" aria-label="Próxima Imagem"><i
-                class="fa-solid fa-chevron-right"></i></button>
-        <div id="lightbox-caption" class="lightbox-caption"></div>
-    </div>
+                <!-- Modal Lightbox (Visualização de Imagens Ampliadas da Galeria) -->
+                <div id="lightbox" class="lightbox-modal">
+                    <span class="lightbox-close" id="lightbox-close">&times;</span>
+                    <button class="lightbox-nav-btn prev" id="lightbox-prev" aria-label="Imagem Anterior"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+                    <img class="lightbox-content" id="lightbox-img" src="" alt="Imagem ampliada">
+                    <button class="lightbox-nav-btn next" id="lightbox-next" aria-label="Próxima Imagem"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+                    <div id="lightbox-caption" class="lightbox-caption"></div>
+                </div>
 
-    <!-- Contato Section -->
-    <section class="contato-section section-padding" id="contato">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Conecte-se</span>
-                <h2 class="section-title">Contato</h2>
-                <div class="title-underline"></div>
-                <p class="section-subtitle-text">"Vamos construir algo incrível juntos?"</p>
-            </div>
+                <!-- Contato Section -->
+                <section class="contato-section section-padding" id="contato">
+                    <div class="container">
+                        <div class="section-header reveal">
+                            <span class="section-tag">Conecte-se</span>
+                            <h2 class="section-title">Contato</h2>
+                            <div class="title-underline"></div>
+                            <p class="section-subtitle-text">"Vamos construir algo incrível juntos?"</p>
+                        </div>
 
-            <div class="contato-grid reveal">
+                        <div class="contato-grid reveal">
 
-                <!-- Informações de Contato -->
-                <div class="contato-info-panel">
-                    <h3>Fale Diretamente Comigo</h3>
-                    <p>Seja para discutir uma vaga de emprego, uma proposta de projeto freelancer em dados/IA ou
-                        simplesmente trocar ideias sobre tecnologia:</p>
+                            <!-- Informações de Contato -->
+                            <div class="contato-info-panel">
+                                <h3>Fale Diretamente Comigo</h3>
+                                <p>Seja para discutir uma vaga de emprego, uma proposta de projeto freelancer em
+                                    dados/IA ou
+                                    simplesmente trocar ideias sobre tecnologia:</p>
 
-                    <div class="contato-info-links">
-                        <a href="mailto:mari.ferreira2061808@gmail.com" class="info-link-item">
-                            <div class="link-icon"><i class="fa-regular fa-envelope"></i></div>
-                            <div>
-                                <span>E-mail</span>
-                                <strong>mari.ferreira2061808@gmail.com</strong>
+                                <div class="contato-info-links">
+                                    <a href="mailto:mari.ferreira2061808@gmail.com" class="info-link-item">
+                                        <div class="link-icon"><i class="fa-regular fa-envelope"></i></div>
+                                        <div>
+                                            <span>E-mail</span>
+                                            <strong>mari.ferreira2061808@gmail.com</strong>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://www.linkedin.com/in/mariana-ferreira-a605651b8" target="_blank"
+                                        rel="noopener" class="info-link-item">
+                                        <div class="link-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                        <div>
+                                            <span>LinkedIn</span>
+                                            <strong>linkedin.com/in/mariana-ferreira...</strong>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://github.com/maryreginaf15" target="_blank" rel="noopener"
+                                        class="info-link-item">
+                                        <div class="link-icon"><i class="fa-brands fa-github"></i></div>
+                                        <div>
+                                            <span>GitHub</span>
+                                            <strong>github.com/maryreginaf15</strong>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </a>
 
-                        <a href="https://www.linkedin.com/in/mariana-ferreira-a605651b8" target="_blank" rel="noopener"
-                            class="info-link-item">
-                            <div class="link-icon"><i class="fa-brands fa-linkedin-in"></i></div>
-                            <div>
-                                <span>LinkedIn</span>
-                                <strong>linkedin.com/in/mariana-ferreira...</strong>
+                            <!-- Formulário de Contato -->
+                            <div class="contato-form-wrapper">
+                                <form id="contact-form" class="contact-form-glass">
+                                    <div class="form-group-flex">
+                                        <div class="form-group">
+                                            <label for="form-name">Nome</label>
+                                            <input type="text" id="form-name" placeholder="Seu nome completo" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="form-email">E-mail</label>
+                                            <input type="email" id="form-email" placeholder="seuemail@exemplo.com"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="form-subject">Assunto</label>
+                                        <input type="text" id="form-subject" placeholder="Ex: Oportunidade / Projeto"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="form-message">Mensagem</label>
+                                        <textarea id="form-message" rows="5" placeholder="Escreva sua mensagem aqui..."
+                                            required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-submit-form"
+                                        id="btn-submit-contact">
+                                        <i class="fa-regular fa-paper-plane"></i> Enviar Mensagem
+                                    </button>
+                                    <div id="form-feedback-message" class="form-feedback-status"></div>
+                                </form>
                             </div>
-                        </a>
 
-                        <a href="https://github.com/maryreginaf15" target="_blank" rel="noopener"
-                            class="info-link-item">
-                            <div class="link-icon"><i class="fa-brands fa-github"></i></div>
-                            <div>
-                                <span>GitHub</span>
-                                <strong>github.com/maryreginaf15</strong>
-                            </div>
-                        </a>
+                        </div>
                     </div>
-                </div>
+                </section>
 
-                <!-- Formulário de Contato -->
-                <div class="contato-form-wrapper">
-                    <form id="contact-form" class="contact-form-glass">
-                        <div class="form-group-flex">
-                            <div class="form-group">
-                                <label for="form-name">Nome</label>
-                                <input type="text" id="form-name" placeholder="Seu nome completo" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="form-email">E-mail</label>
-                                <input type="email" id="form-email" placeholder="seuemail@exemplo.com" required>
-                            </div>
+                <!-- Footer -->
+                <footer class="footer-section">
+                    <div class="container footer-grid">
+                        <div class="footer-brand">
+                            <a href="#" class="logo">
+                                <span class="logo-accent">&lt;</span>Mariana Ferreira<span class="logo-accent">
+                                    /&gt;</span>
+                            </a>
+                            <p>Dados, Business Intelligence e IA Generativa transformados em resultados de impacto
+                                estratégico real.
+                            </p>
                         </div>
-                        <div class="form-group">
-                            <label for="form-subject">Assunto</label>
-                            <input type="text" id="form-subject" placeholder="Ex: Oportunidade / Projeto" required>
+
+                        <div class="footer-nav">
+                            <h4>Menu Rápido</h4>
+                            <ul>
+                                <li><a href="#sobre">Sobre Mim</a></li>
+                                <li><a href="#experiencia">Experiência</a></li>
+                                <li><a href="#google-skills">Google Skills</a></li>
+                                <li><a href="#projetos-destaque">Projetos</a></li>
+                                <li><a href="#voluntariado">Voluntariado</a></li>
+                            </ul>
                         </div>
-                        <div class="form-group">
-                            <label for="form-message">Mensagem</label>
-                            <textarea id="form-message" rows="5" placeholder="Escreva sua mensagem aqui..."
-                                required></textarea>
+
+                        <div class="footer-contact">
+                            <h4>Fale Conosco</h4>
+                            <p><i class="fa-regular fa-envelope"></i> mari.ferreira2061808@gmail.com</p>
+                            <p><i class="fa-regular fa-location-dot"></i> São Paulo — SP, Brasil</p>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-submit-form" id="btn-submit-contact">
-                            <i class="fa-regular fa-paper-plane"></i> Enviar Mensagem
-                        </button>
-                        <div id="form-feedback-message" class="form-feedback-status"></div>
-                    </form>
-                </div>
+                    </div>
 
-            </div>
-        </div>
-    </section>
+                    <div class="footer-bottom">
+                        <p>&copy; 2026 Mariana Regina Ferreira. Desenvolvido com muito <i
+                                class="fa-solid fa-heart text-accent"></i>
+                            e IA Generativa.</p>
+                    </div>
+                </footer>
 
-    <!-- Footer -->
-    <footer class="footer-section">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <a href="#" class="logo">
-                    <span class="logo-accent">&lt;</span>Mariana Ferreira<span class="logo-accent"> /&gt;</span>
-                </a>
-                <p>Dados, Business Intelligence e IA Generativa transformados em resultados de impacto estratégico real.
-                </p>
-            </div>
-
-            <div class="footer-nav">
-                <h4>Menu Rápido</h4>
-                <ul>
-                    <li><a href="#sobre">Sobre Mim</a></li>
-                    <li><a href="#experiencia">Experiência</a></li>
-                    <li><a href="#google-skills">Google Skills</a></li>
-                    <li><a href="#projetos-destaque">Projetos</a></li>
-                    <li><a href="#voluntariado">Voluntariado</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-contact">
-                <h4>Fale Conosco</h4>
-                <p><i class="fa-regular fa-envelope"></i> mari.ferreira2061808@gmail.com</p>
-                <p><i class="fa-regular fa-location-dot"></i> São Paulo — SP, Brasil</p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 Mariana Regina Ferreira. Desenvolvido com muito <i class="fa-solid fa-heart text-accent"></i>
-                e IA Generativa.</p>
-        </div>
-    </footer>
-
-    <!-- Script Principal -->
-    <script src="script.js"></script>
+                <!-- Script Principal -->
+                <script src="script.js"></script>
 </body>
 
 </html>
