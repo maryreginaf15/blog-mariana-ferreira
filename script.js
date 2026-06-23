@@ -113,27 +113,32 @@ document.addEventListener('DOMContentLoaded', () => {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const skillCards = document.querySelectorAll('.skill-card-item');
 
+    function filterSkills(category) {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        const activeBtn = document.querySelector(`.filter-btn[data-category="${category}"]`);
+        if (activeBtn) activeBtn.classList.add('active');
+
+        skillCards.forEach(card => {
+            const cardCategories = card.getAttribute('data-category').split(' ');
+            const matches = category === 'all' || cardCategories.includes(category);
+
+            if (matches) {
+                card.classList.remove('hidden');
+                card.style.opacity = '0';
+                setTimeout(() => { card.style.opacity = '1'; }, 50);
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+    }
+
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-
-            const category = button.getAttribute('data-category');
-
-            skillCards.forEach(card => {
-                // Suporta múltiplas categorias separadas por espaço: ex "hard dados"
-                const cardCategories = card.getAttribute('data-category').split(' ');
-
-                if (category === 'all' || cardCategories.includes(category)) {
-                    card.classList.remove('hidden');
-                    card.style.opacity = '0';
-                    setTimeout(() => { card.style.opacity = '1'; }, 50);
-                } else {
-                    card.classList.add('hidden');
-                }
-            });
+            filterSkills(button.getAttribute('data-category'));
         });
     });
+
+    filterSkills('all');
 
 
 
