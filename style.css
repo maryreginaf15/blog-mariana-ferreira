@@ -2028,9 +2028,11 @@ button {
 
 .contato-grid {
     display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 4.5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
     align-items: start;
+    width: 100%;
+    max-width: 100%;
 }
 
 .contato-info-panel h3 {
@@ -2100,8 +2102,11 @@ button {
     background-color: var(--bg-white);
     border: 1px solid var(--border-light);
     border-radius: var(--radius-lg);
-    padding: 3rem;
+    padding: 2.5rem;
     box-shadow: var(--shadow-md);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .contact-form-glass {
@@ -2137,6 +2142,9 @@ button {
     color: var(--text-main);
     background-color: var(--bg-light);
     transition: var(--transition-fast);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .form-group input:focus, .form-group textarea:focus {
@@ -2250,6 +2258,14 @@ button {
     
     .carousel-slide {
         flex: 0 0 calc(33.333% - 0.9fr); /* Mostra 3 fotos no tablet */
+    }
+    
+    .contato-grid {
+        gap: 2.5rem;
+    }
+    
+    .contato-form-wrapper {
+        padding: 2rem;
     }
     
     .footer-grid {
@@ -2394,6 +2410,24 @@ button {
         grid-template-columns: 1fr;
     }
     
+    .contato-info-panel {
+        text-align: center;
+    }
+    
+    .contato-info-links {
+        align-items: center;
+    }
+    
+    .info-link-item {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.7rem;
+    }
+    
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 2.5rem;
@@ -2440,7 +2474,37 @@ button {
     .lightbox-nav-btn.prev { left: 1rem; }
     .lightbox-nav-btn.next { right: 1rem; }
     
+    .contato-grid {
+        gap: 2rem;
+    }
+    
+    .contato-info-panel h3 {
+        font-size: 1.35rem;
+    }
+    
+    .contato-info-panel p {
+        font-size: 0.95rem;
+    }
+    
+    .info-link-item {
+        padding: 1rem 1.25rem;
+    }
+    
+    .info-link-item strong {
+        font-size: 0.85rem;
+        word-break: break-all;
+    }
+    
     .contato-form-wrapper {
         padding: 1.5rem;
+    }
+    
+    .tech-tags-wrapper {
+        gap: 0.35rem;
+    }
+    
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.55rem;
     }
 }
